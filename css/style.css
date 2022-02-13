@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: #19a2ae;
+  z-index: -2;
+  overflow: hidden;
+}
+
+body::before, body::after {
+  content: ' ';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+body::before {
+  top: -43%;
+  left: -43%;
+  background-image: url("../images/bg-pattern-top.svg");
+  background-position: bottom right;
+}
+
+body::after {
+  bottom: -43%;
+  right: -43%;
+  background-image: url("../images/bg-pattern-bottom.svg");
+  background-position: top left;
+}
+
+.card {
+  width: 350px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.card .card-header {
+  position: relative;
+  width: 100%;
+  height: 140px;
+  background-image: url("../images/bg-pattern-card.svg");
+  background-size: cover;
+  margin-bottom: 70px;
+}
+
+.card .card-header img {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  border-radius: 50%;
+  outline: 7px solid white;
+}
+
+.card .card-body {
+  border-bottom: 1px solid rgba(150, 150, 150, 0.5);
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.card .card-body h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2d3248;
+}
+
+.card .card-body h1 span {
+  margin-left: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #6a6f81;
+}
+
+.card .card-body .location {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #6a6f81;
+}
+
+.card .card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 50px 25px;
+  color: #6a6f81;
+}
+
+.card .card-footer .box {
+  text-align: center;
+}
+
+.card .card-footer .box h2 {
+  font-size: 18px;
+  color: #2d3248;
+}
+
+.card .card-footer .box p {
+  margin-top: 5px;
+  font-size: 12px;
+}

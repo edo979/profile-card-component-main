@@ -1,0 +1,121 @@
+$dark-cyan: hsl(185, 75%, 39%);
+$very-dark-desaturated-blue: hsl(229, 23%, 23%);
+$dark-grayish-blue: hsl(227, 10%, 46%);
+$dark-gray: hsl(0, 0%, 59%);
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: $dark-cyan;
+  z-index: -2;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: ' ';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  &::before {
+    top: -43%;
+    left: -43%;
+    background-image: url('../images/bg-pattern-top.svg');
+    background-position: bottom right;
+  }
+  &::after {
+    bottom: -43%;
+    right: -43%;
+    background-image: url('../images/bg-pattern-bottom.svg');
+    background-position: top left;
+  }
+}
+
+.card {
+  width: 350px;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: white;
+
+  .card-header {
+    position: relative;
+    width: 100%;
+    height: 140px;
+    background-image: url('../images/bg-pattern-card.svg');
+    background-size: cover;
+    margin-bottom: 70px;
+
+    img {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 50%);
+      border-radius: 50%;
+      outline: 7px solid white;
+    }
+  }
+
+  .card-body {
+    border-bottom: 1px solid rgba($color: $dark-gray, $alpha: 0.5);
+    padding-bottom: 25px;
+    text-align: center;
+
+    h1 {
+      font-size: 20px;
+      font-weight: 700;
+      color: $very-dark-desaturated-blue;
+
+      span {
+        margin-left: 5px;
+        font-size: 18px;
+        font-weight: 400;
+        color: $dark-grayish-blue;
+      }
+    }
+    .location {
+      margin-top: 10px;
+      font-size: 14px;
+      color: $dark-grayish-blue;
+    }
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px 25px;
+    color: $dark-grayish-blue;
+
+    .box {
+      text-align: center;
+      h2 {
+        font-size: 18px;
+        color: $very-dark-desaturated-blue;
+      }
+
+      p {
+        margin-top: 5px;
+        font-size: 12px;
+      }
+    }
+  }
+}

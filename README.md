@@ -20,7 +20,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ### Links
 
 - Solution URL: [solution](https://your-solution-url.com)
-- Live Site URL: [live site](https://your-live-site-url.com)
+- Live Site URL: [live site](https://edo979.github.io/profile-card-component-main/)
 
 ## My process
 

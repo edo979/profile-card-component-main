@@ -19,7 +19,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [solution](https://your-solution-url.com)
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/profile-card-component-Qu0mqnl1H)
 - Live Site URL: [live site](https://edo979.github.io/profile-card-component-main/)
 
 ## My process
